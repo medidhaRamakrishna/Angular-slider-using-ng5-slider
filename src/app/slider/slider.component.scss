@@ -1,0 +1,37 @@
+/*::ng-deep {
+  .custom-slider .ng5-slider {
+    .ng5-slider-bar {
+      height: 2px;
+    }
+
+    .ng5-slider-left-out-selection .ng5-slider-bar {
+      background: #2ecb6f !important;
+    }
+
+    .ng5-slider-right-out-selection .ng5-slider-bar {
+      background: #e74c3c !important;
+    }
+
+    .ng5-slider-selection {
+      background: rgb(255, 230, 0);
+    }
+  }
+}*/
+// We need to use ::ng-deep to overcome view encapsulation
+::ng-deep {
+  /* .custom-slider .ng5-slider .ng5-slider-bar {
+     background: green;
+     height: 2px;
+   }
+
+   .custom-slider .ng5-slider .ng5-slider-selection {
+     background: orange;
+   }
+   .custom-slider .ng5-slider.ng5-slider-tick {
+     display: none;
+   }*/
+  .custom-slider .ng5-slider .ng5-slider-tick{
+    width:0px;
+  }
+}
+
